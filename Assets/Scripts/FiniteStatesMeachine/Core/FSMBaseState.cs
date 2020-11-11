@@ -100,13 +100,11 @@ public abstract class FSMBaseState
     /// <summary>
     /// 状态切换函数
     /// </summary>
-    /// <param name="objecs">参数</param>
-    public abstract void Reason(GameObject owner,GameObject player);
+    public abstract void Reason();
 
     /// <summary>
     /// 执行命令函数
     /// </summary>
-    /// <param name="objecs">参数</param>
-    public abstract void Action(GameObject owner, GameObject player);
+    public abstract void Action();
 
 }

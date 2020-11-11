@@ -22,10 +22,10 @@ public class NPCController : MonoBehaviour
     public void MakeFSM()
     {
         fsm = new FSMSystem();
-        FollowPlayerState followPlayerState = new FollowPlayerState(FSMStates.FollowPlayerState,fsm);
+        FollowPlayerState followPlayerState = new FollowPlayerState(FSMStates.FollowPlayerState,fsm,transform,player.transform);
         followPlayerState.AddTransition(FSMTransitions.MissPlayer, FSMStates.PartolState);
 
-        PatrolState patrolState = new PatrolState(FSMStates.PartolState,fsm, path,gameObject);
+        PatrolState patrolState = new PatrolState(FSMStates.PartolState,fsm, path,transform,player.transform);
         patrolState.AddTransition(FSMTransitions.LookPlayer, FSMStates.FollowPlayerState);
 
         fsm.AddState(patrolState);
@@ -34,7 +34,7 @@ public class NPCController : MonoBehaviour
 
     public void FixedUpdate()
     {
-        fsm.CurrentState.Reason(gameObject,player);
-        fsm.CurrentState.Action(gameObject, player);
+        fsm.CurrentState.Reason();
+        fsm.CurrentState.Action();
     }
 }

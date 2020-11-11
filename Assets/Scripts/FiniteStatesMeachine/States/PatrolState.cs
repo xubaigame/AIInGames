@@ -12,13 +12,15 @@ using UnityEngine;
 public class PatrolState : FSMBaseState
 {
     private Transform[] _paths;
-    private GameObject _owner;
+    private Transform _owner;
+    private Transform _player;
     private int _pathIndex;
-    public PatrolState(FSMStates state,FSMSystem fsmSystem,Transform[] path,GameObject owner) : base(state,fsmSystem)
+    public PatrolState(FSMStates state,FSMSystem fsmSystem,Transform[] path, Transform owner,Transform player) : base(state,fsmSystem)
     {
         _paths = path;
         _pathIndex = 0;
         _owner = owner;
+        _player = player;
     }
 
     public override void BeforeEnteringState()
@@ -32,17 +34,17 @@ public class PatrolState : FSMBaseState
         //    }
         //}
     }
-    public override void Action(GameObject owner, GameObject player)
+    public override void Action()
     {
-        if(Vector3.Distance(owner.transform.position,player.transform.position) <= 3)
+        if(Vector3.Distance(_owner.transform.position, _player.transform.position) <= 3)
         {
             fsmSystem.PerformTransition(FSMTransitions.LookPlayer);
         }
     }
 
-    public override void Reason(GameObject owner, GameObject player)
+    public override void Reason()
     {
-        Vector3 dir = new Vector3(_paths[_pathIndex].position.x, owner.transform.position.y, _paths[_pathIndex].position.z) - owner.transform.position;
+        Vector3 dir = new Vector3(_paths[_pathIndex].position.x, _owner.transform.position.y, _paths[_pathIndex].position.z) - _owner.transform.position;
         if(dir.magnitude<1)
         {
             _pathIndex++;
@@ -51,7 +53,7 @@ public class PatrolState : FSMBaseState
                 _pathIndex = 0;
             }
         }
-        owner.transform.Translate(dir.normalized * 5 * Time.deltaTime);
+        _owner.transform.Translate(dir.normalized * 5 * Time.deltaTime);
 
 
     }
