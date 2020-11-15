@@ -63,12 +63,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\FiniteStatesMeachine\Core\FSMBaseState.cs" />
-    <Compile Include="Assets\Scripts\FiniteStatesMeachine\Core\FSMSystem.cs" />
-    <Compile Include="Assets\Scripts\FiniteStatesMeachine\FSMStates.cs" />
-    <Compile Include="Assets\Scripts\FiniteStatesMeachine\FSMTransitions.cs" />
-    <Compile Include="Assets\Scripts\FiniteStatesMeachine\States\FollowPlayerState.cs" />
-    <Compile Include="Assets\Scripts\FiniteStatesMeachine\States\PatrolState.cs" />
+    <Compile Include="Assets\Scripts\FiniteStatesMachine\Core\FSMBaseState.cs" />
+    <Compile Include="Assets\Scripts\FiniteStatesMachine\Core\FSMSystem.cs" />
+    <Compile Include="Assets\Scripts\FiniteStatesMachine\FSMStates.cs" />
+    <Compile Include="Assets\Scripts\FiniteStatesMachine\FSMTransitions.cs" />
+    <Compile Include="Assets\Scripts\FiniteStatesMachine\States\FollowPlayerState.cs" />
+    <Compile Include="Assets\Scripts\FiniteStatesMachine\States\PatrolState.cs" />
     <Compile Include="Assets\Scripts\NPCController.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
