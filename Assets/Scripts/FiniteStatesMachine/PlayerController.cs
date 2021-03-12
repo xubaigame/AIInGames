@@ -6,36 +6,40 @@
 //     功能：玩家控制类
 // *****************************************************
 
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+namespace FiniteStatesMachine
 {
-    public float Speed;
-
-    private int x, y;
-    private void Update()
+    public class PlayerController : MonoBehaviour
     {
-        x = 0;
-        y = 0;
-        if (Input.GetKey(KeyCode.W))
+        public float Speed;
+
+        private int x, y;
+        private void Update()
         {
-            y = 1;
+            x = 0;
+            y = 0;
+            if (Input.GetKey(KeyCode.W))
+            {
+                y = 1;
+            }
+            if (Input.GetKey(KeyCode.S))
+            {
+                y = -1;
+            }
+            if (Input.GetKey(KeyCode.A))
+            {
+                x = -1;
+            }
+            if (Input.GetKey(KeyCode.D))
+            {
+                x = 1;
+            }
+            transform.Translate(new Vector3(x,0,y).normalized* Speed * Time.deltaTime);
         }
-        if (Input.GetKey(KeyCode.S))
-        {
-            y = -1;
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            x = -1;
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            x = 1;
-        }
-        transform.Translate(new Vector3(x,0,y).normalized* Speed * Time.deltaTime);
     }
 }
+
+
+
+

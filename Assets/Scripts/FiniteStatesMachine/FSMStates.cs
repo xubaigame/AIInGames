@@ -6,10 +6,13 @@
 	功能：有限状态机状态枚举
 *****************************************************/
 
-public enum FSMStates
+namespace FiniteStatesMachine
 {
-    //默认状态
-    NullState = 0,
-    PartolState = 1,
-    FollowPlayerState =2,
+	public enum FSMStates
+	{
+		//默认状态
+		NullState = 0,
+		PartolState = 1,
+		FollowPlayerState =2,
+	}
 }

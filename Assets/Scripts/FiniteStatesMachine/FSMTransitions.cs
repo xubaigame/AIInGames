@@ -6,11 +6,14 @@
 	功能：有限状态机状态转换条件枚举
 *****************************************************/
 
-public enum FSMTransitions
+namespace FiniteStatesMachine
 {
-    //默认转换条件
-    NullTransition = 0,
+	public enum FSMTransitions
+	{
+		//默认转换条件
+		NullTransition = 0,
 
-    LookPlayer = 1,
-    MissPlayer = 2,
+		LookPlayer = 1,
+		MissPlayer = 2,
+	}
 }
