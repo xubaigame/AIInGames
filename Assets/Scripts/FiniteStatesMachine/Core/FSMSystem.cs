@@ -1,7 +1,7 @@
 /****************************************************
     文件：FSMSystem.cs
 	作者：积极向上小木木
-    邮箱: positivemumu@126.com
+    邮箱：positivemumu@126.com
     日期：2020/11/10 22:3:32
 	功能：有限状态机管理类
 *****************************************************/
@@ -99,7 +99,7 @@ public class FSMSystem
         {
             if (nextState == item.State)
             {
-                _currentState.BeforLeavingState();
+                _currentState.BeforeLeavingState();
                 _proviceState = _currentState;
                 item.BeforeEnteringState();
                 _currentState = item;
@@ -117,7 +117,7 @@ public class FSMSystem
         {
             FSMBaseState temp;
             temp = _proviceState;
-            _currentState.BeforLeavingState();
+            _currentState.BeforeLeavingState();
             _proviceState = _currentState;
             temp.BeforeEnteringState();
             _currentState = temp;

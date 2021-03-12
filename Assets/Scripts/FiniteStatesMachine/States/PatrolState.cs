@@ -1,7 +1,7 @@
 /****************************************************
     文件：PatrolState.cs
 	作者：积极向上小木木
-    邮箱: positivemumu@126.com
+    邮箱：positivemumu@126.com
     日期：2020/11/10 22:22:46
 	功能：Nothing
 *****************************************************/
@@ -25,14 +25,7 @@ public class PatrolState : FSMBaseState
 
     public override void BeforeEnteringState()
     {
-        //for (int i = 0; i < _paths.Length; i++)
-        //{
-        //    if(Vector3.Angle(_owner.transform.position,new Vector3(_paths[i].position.x-_owner.transform.position.x,0,_paths[i].position.z - _owner.transform.position.z))<90f)
-        //    {
-        //        _pathIndex = i;
-        //        break;
-        //    }
-        //}
+        
     }
     public override void Action()
     {
@@ -53,8 +46,9 @@ public class PatrolState : FSMBaseState
                 _pathIndex = 0;
             }
         }
-        _owner.transform.Translate(dir.normalized * 5 * Time.deltaTime);
-
+        Debug.Log(1);
+        _owner.GetComponent<Rigidbody>().velocity = dir.normalized * 5;
+        _owner.LookAt(_paths[_pathIndex]);
 
     }
 }

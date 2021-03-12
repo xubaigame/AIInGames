@@ -62,9 +62,10 @@
      <Compile Include="Assets\Scripts\FiniteStatesMachine\Core\FSMSystem.cs" />
      <Compile Include="Assets\Scripts\FiniteStatesMachine\FSMStates.cs" />
      <Compile Include="Assets\Scripts\FiniteStatesMachine\FSMTransitions.cs" />
+     <Compile Include="Assets\Scripts\FiniteStatesMachine\NPCController.cs" />
+     <Compile Include="Assets\Scripts\FiniteStatesMachine\PlayerController.cs" />
      <Compile Include="Assets\Scripts\FiniteStatesMachine\States\FollowPlayerState.cs" />
      <Compile Include="Assets\Scripts\FiniteStatesMachine\States\PatrolState.cs" />
-     <Compile Include="Assets\Scripts\NPCController.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Volumes/Datas/Codes/Unity/AIInGames/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>

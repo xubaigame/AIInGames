@@ -1,7 +1,7 @@
 /****************************************************
     文件：FSMBaseState.cs
 	作者：积极向上小木木
-    邮箱: positivemumu@126.com
+    邮箱：positivemumu@126.com
     日期：2020/11/10 22:2:53
 	功能：有限状态机状态基类
 *****************************************************/
@@ -95,7 +95,7 @@ public abstract class FSMBaseState
     /// <summary>
     /// 切换状态之前调用
     /// </summary>
-    public virtual void BeforLeavingState() { }
+    public virtual void BeforeLeavingState() { }
 
     /// <summary>
     /// 状态切换函数
