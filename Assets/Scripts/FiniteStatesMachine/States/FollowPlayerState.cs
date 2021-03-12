@@ -14,7 +14,7 @@ namespace FiniteStatesMachine
 	{
 		private Transform _owner;
 		private Transform _player;
-		public FollowPlayerState(FSMStates state, FSMSystem fsmSystem,Transform owner,Transform player) : base(state, fsmSystem) 
+		public FollowPlayerState(string name, FSMSystem fsmSystem,Transform owner,Transform player) : base(name, fsmSystem) 
 		{
 			_owner = owner;
 			_player = player;
@@ -24,7 +24,7 @@ namespace FiniteStatesMachine
 		{
 			if (Vector3.Distance(_owner.transform.position, _player.transform.position) >= 15)
 			{
-				fsmSystem.PerformTransition(FSMTransitions.MissPlayer);
+				fsmSystem.PerformTransition(Constants.MissPlayer);
 			}
 		}
 
@@ -39,10 +39,7 @@ namespace FiniteStatesMachine
         
 			_owner.transform.LookAt(_player);
 			_owner.GetComponent<Rigidbody>().velocity = dir.normalized * 5;
-        
-			//Quaternion lookRot = Quaternion.LookRotation(_player.position);
-			//_owner.transform.Translate(dir.normalized * 5 * Time.deltaTime);
-			//_owner.rotation = Quaternion.Slerp(_owner.rotation, lookRot, Mathf.Clamp01(5 * Time.deltaTime));
+			
 		}
 	}
 }

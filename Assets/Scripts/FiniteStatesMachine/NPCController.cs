@@ -24,11 +24,11 @@ namespace FiniteStatesMachine
 		public void MakeFSM()
 		{
 			fsm = new FSMSystem();
-			FollowPlayerState followPlayerState = new FollowPlayerState(FSMStates.FollowPlayerState,fsm,transform,player.transform);
-			followPlayerState.AddTransition(FSMTransitions.MissPlayer, FSMStates.PartolState);
+			FollowPlayerState followPlayerState = new FollowPlayerState(Constants.FollowPlayerState,fsm,transform,player.transform);
+			followPlayerState.AddTransition(Constants.MissPlayer, Constants.PatrolState);
 
-			PatrolState patrolState = new PatrolState(FSMStates.PartolState,fsm, path,transform,player.transform);
-			patrolState.AddTransition(FSMTransitions.LookPlayer, FSMStates.FollowPlayerState);
+			PatrolState patrolState = new PatrolState(Constants.PatrolState,fsm, path,transform,player.transform);
+			patrolState.AddTransition(Constants.LookPlayer, Constants.FollowPlayerState);
 
 			fsm.AddState(patrolState);
 			fsm.AddState(followPlayerState);

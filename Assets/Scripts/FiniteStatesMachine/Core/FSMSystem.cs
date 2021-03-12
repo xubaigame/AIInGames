@@ -6,6 +6,7 @@
 	功能：有限状态机管理类
 *****************************************************/
 
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -58,7 +59,7 @@ namespace FiniteStatesMachine
 
             foreach (var item in _states)
             {
-                if (item.State == state.State)
+                if (item.Name == state.Name)
                 {
                     Debug.LogError("FSMSystem ERROR: 添加已经添加，请勿重复添加！");
                     return;
@@ -72,9 +73,9 @@ namespace FiniteStatesMachine
         /// 删除状态
         /// </summary>
         /// <param name="state">状态类对象</param>
-        public void DeleteState(FSMStates state)
+        public void DeleteState(string name)
         {
-            if (state == FSMStates.NullState)
+            if (name == String.Empty||name == "")
             {
                 Debug.LogError("FSMSystem ERROR: 默认状态无法作为实际的状态使用！请尝试更换状态！");
                 return;
@@ -82,39 +83,39 @@ namespace FiniteStatesMachine
 
             foreach (var item in _states)
             {
-                if (item.State == state)
+                if (item.Name == name)
                 {
                     _states.Remove(item);
                     return;
                 }
             }
 
-            Debug.LogError("FSMSystem ERROR: 状态列表中不存在" + state.ToString() + "状态！");
+            Debug.LogError("FSMSystem ERROR: 状态列表中不存在" + name + "状态！");
         }
 
         /// <summary>
         /// 执行状态转换
         /// </summary>
         /// <param name="transition">转换条件</param>
-        public void PerformTransition(FSMTransitions transition)
+        public void PerformTransition(string transition)
         {
-            if (transition == FSMTransitions.NullTransition)
+            if (transition == String.Empty||transition == "")
             {
                 Debug.LogError("FSMSystem ERROR: 默认转换条件无法作为实际的转换条件使用，请尝试更换转换条件！");
                 return;
             }
 
-            FSMStates nextState = CurrentState.GetStateByTransition(transition);
-            if (nextState == FSMStates.NullState)
+            string nextStateName = CurrentState.GetStateByTransition(transition);
+            if (nextStateName == String.Empty||nextStateName == "")
             {
-                Debug.LogError("FSMSystem ERROR: " + _currentState.State.ToString() + "状态在" + transition.ToString() +
+                Debug.LogError("FSMSystem ERROR: " + _currentState.Name + "状态在" + transition.ToString() +
                                "条件下转换到的状态是空状态，状态转换失败！");
                 return;
             }
 
             foreach (var item in _states)
             {
-                if (nextState == item.State)
+                if (nextStateName == item.Name)
                 {
                     _currentState.BeforeLeavingState();
                     _proviceState = _currentState;

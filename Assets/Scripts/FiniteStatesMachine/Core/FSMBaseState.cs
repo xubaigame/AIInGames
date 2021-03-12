@@ -6,6 +6,7 @@
 	功能：有限状态机状态基类
 *****************************************************/
 
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -16,22 +17,22 @@ namespace FiniteStatesMachine
         protected FSMSystem fsmSystem;
 
         //状态转换字典
-        private Dictionary<FSMTransitions, FSMStates> _transitonToStatesDic;
+        private Dictionary<string, string> _transitonToStatesDic;
 
         //当前状态对应的枚举
-        private FSMStates _state;
+        private string _name;
 
-        public FSMStates State
+        public string Name
         {
-            get => _state;
-            set => _state = value;
+            get => _name;
+            set => _name = value;
         }
 
-        public FSMBaseState(FSMStates state, FSMSystem fsmSystem)
+        public FSMBaseState(string name, FSMSystem fsmSystem)
         {
-            _state = state;
+            _name = name;
             this.fsmSystem = fsmSystem;
-            _transitonToStatesDic = new Dictionary<FSMTransitions, FSMStates>();
+            _transitonToStatesDic = new Dictionary<string, string>();
         }
 
         /// <summary>
@@ -39,28 +40,28 @@ namespace FiniteStatesMachine
         /// </summary>
         /// <param name="transition">转换条件</param>
         /// <param name="state">要转换到的状态枚举</param>
-        public void AddTransition(FSMTransitions transition, FSMStates state)
+        public void AddTransition(string transition, string name)
         {
-            if (transition == FSMTransitions.NullTransition)
+            if (transition == String.Empty||transition == "")
             {
-                Debug.Log("FSMBaseState Error: 默认转换条件无法作为实际的转换条件使用，请尝试更换转换条件！");
+                Debug.Log("FSMBaseState Error: 转换条件不合法，请尝试更换转换条件！");
                 return;
             }
 
-            if (state == FSMStates.NullState)
+            if (name == String.Empty||name == "")
             {
-                Debug.Log("FSMBaseState Error: 默认状态无法作为实际的状态使用，请尝试更换状态！");
+                Debug.Log("FSMBaseState Error: 状态名称不合法，请尝试更换状态！");
                 return;
             }
 
             if (_transitonToStatesDic.ContainsKey(transition))
             {
-                Debug.Log("FSMBaseState Error: " + _state.ToString() + "状态中已经存在转到" + state.ToString() + "状态的转换条件" +
+                Debug.Log("FSMBaseState Error: " + _name.ToString() + "状态中已经存在转到" + name.ToString() + "状态的转换条件" +
                           transition.ToString() + "，请勿重复添加！");
                 return;
             }
 
-            _transitonToStatesDic.Add(transition, state);
+            _transitonToStatesDic.Add(transition, name);
         }
 
 
@@ -68,17 +69,17 @@ namespace FiniteStatesMachine
         /// 移除一个转换条件
         /// </summary>
         /// <param name="transition">转换状态</param>
-        public void RemoveAddTransition(FSMTransitions transition)
+        public void RemoveAddTransition(string transition)
         {
-            if (transition == FSMTransitions.NullTransition)
+            if (transition == String.Empty||transition == "")
             {
-                Debug.Log("FSMBaseState Error: 默认转换条件无法作为实际的转换条件使用，请尝试更换转换条件！");
+                Debug.Log("FSMBaseState Error: 转换条件不合法，请尝试更换转换条件！");
                 return;
             }
 
             if (!_transitonToStatesDic.ContainsKey(transition))
             {
-                Debug.Log("FSMBaseState Error: " + _state.ToString() + "状态中不存在存在转到其他状态的转换条件" + transition.ToString() +
+                Debug.Log("FSMBaseState Error: " + _name.ToString() + "状态中不存在存在转到其他状态的转换条件" + transition.ToString() +
                           "！");
                 return;
             }
@@ -92,11 +93,11 @@ namespace FiniteStatesMachine
         /// </summary>
         /// <param name="transition">转换条件</param>
         /// <returns></returns>
-        public FSMStates GetStateByTransition(FSMTransitions transition)
+        public string GetStateByTransition(string transition)
         {
             if (_transitonToStatesDic.ContainsKey(transition))
                 return _transitonToStatesDic[transition];
-            return FSMStates.NullState;
+            return String.Empty;
         }
 
         /// <summary>

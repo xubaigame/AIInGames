@@ -17,7 +17,7 @@ namespace FiniteStatesMachine
 		private Transform _owner;
 		private Transform _player;
 		private int _pathIndex;
-		public PatrolState(FSMStates state,FSMSystem fsmSystem,Transform[] path, Transform owner,Transform player) : base(state,fsmSystem)
+		public PatrolState(string name,FSMSystem fsmSystem,Transform[] path, Transform owner,Transform player) : base(name,fsmSystem)
 		{
 			_paths = path;
 			_pathIndex = 0;
@@ -33,7 +33,7 @@ namespace FiniteStatesMachine
 		{
 			if(Vector3.Distance(_owner.transform.position, _player.transform.position) <= 3)
 			{
-				fsmSystem.PerformTransition(FSMTransitions.LookPlayer);
+				fsmSystem.PerformTransition(Constants.LookPlayer);
 			}
 		}
 
@@ -48,7 +48,6 @@ namespace FiniteStatesMachine
 					_pathIndex = 0;
 				}
 			}
-			Debug.Log(1);
 			_owner.GetComponent<Rigidbody>().velocity = dir.normalized * 5;
 			_owner.LookAt(_paths[_pathIndex]);
 
