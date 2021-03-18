@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FSMAssembly", "FSMAssembly.csproj", "{DB800171-0235-C993-9EB3-36CAEFBD6DF5}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{72862B08-A2F1-9A82-57A9-2CE7D93DE7B8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{3E2291CA-0492-0EE6-3D28-A04FA662BC37}"
@@ -11,6 +13,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB800171-0235-C993-9EB3-36CAEFBD6DF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB800171-0235-C993-9EB3-36CAEFBD6DF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB800171-0235-C993-9EB3-36CAEFBD6DF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB800171-0235-C993-9EB3-36CAEFBD6DF5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{72862B08-A2F1-9A82-57A9-2CE7D93DE7B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{72862B08-A2F1-9A82-57A9-2CE7D93DE7B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72862B08-A2F1-9A82-57A9-2CE7D93DE7B8}.Release|Any CPU.ActiveCfg = Release|Any CPU

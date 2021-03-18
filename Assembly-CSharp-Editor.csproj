@@ -656,6 +656,10 @@
       <Project>{72862B08-A2F1-9A82-57A9-2CE7D93DE7B8}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
+    <ProjectReference Include="FSMAssembly.csproj">
+      <Project>{DB800171-0235-C993-9EB3-36CAEFBD6DF5}</Project>
+      <Name>FSMAssembly</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
