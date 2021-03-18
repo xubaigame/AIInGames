@@ -58,15 +58,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\FiniteStatesMachine\Constants.cs" />
-     <Compile Include="Assets\Scripts\FiniteStatesMachine\Core\FSMBaseState.cs" />
-     <Compile Include="Assets\Scripts\FiniteStatesMachine\Core\FSMSystem.cs" />
-     <Compile Include="Assets\Scripts\FiniteStatesMachine\FSMStates.cs" />
-     <Compile Include="Assets\Scripts\FiniteStatesMachine\FSMTransitions.cs" />
-     <Compile Include="Assets\Scripts\FiniteStatesMachine\NPCController.cs" />
-     <Compile Include="Assets\Scripts\FiniteStatesMachine\PlayerController.cs" />
-     <Compile Include="Assets\Scripts\FiniteStatesMachine\States\FollowPlayerState.cs" />
-     <Compile Include="Assets\Scripts\FiniteStatesMachine\States\PatrolState.cs" />
+     <Compile Include="Assets\Example\FiniteStatesMachine\Scripts\Constants.cs" />
+     <Compile Include="Assets\Example\FiniteStatesMachine\Scripts\NPCController.cs" />
+     <Compile Include="Assets\Example\FiniteStatesMachine\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Example\FiniteStatesMachine\Scripts\States\FollowPlayerState.cs" />
+     <Compile Include="Assets\Example\FiniteStatesMachine\Scripts\States\PatrolState.cs" />
+     <Compile Include="Assets\Scripts\FiniteStatesMachine\FSMBaseState.cs" />
+     <Compile Include="Assets\Scripts\FiniteStatesMachine\FSMSystem.cs" />
+     <Compile Include="Assets\Scripts\Pathfinding\AStarPathfinding\Core\AStarNode.cs" />
+     <Compile Include="Assets\Scripts\Pathfinding\AStarPathfinding\Core\AStarPoint.cs" />
+     <Compile Include="Assets\Scripts\Pathfinding\AStarPathfinding\Core\AStarSystem.cs" />
+     <Compile Include="Assets\Scripts\Pathfinding\AStarPathfinding\MyAStarNode.cs" />
+     <Compile Include="Assets\Scripts\Pathfinding\PathfindingProgram.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Volumes/Datas/Codes/Unity/AIInGames/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
