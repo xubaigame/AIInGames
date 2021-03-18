@@ -660,6 +660,10 @@
       <Project>{DB800171-0235-C993-9EB3-36CAEFBD6DF5}</Project>
       <Name>FSMAssembly</Name>
     </ProjectReference>
+    <ProjectReference Include="AStarAssembly.csproj">
+      <Project>{CB5D3E2F-B100-85A5-567F-6180FA20C1A6}</Project>
+      <Name>AStarAssembly</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
