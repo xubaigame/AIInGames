@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AStarAssembly", "AStarAssem
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{72862B08-A2F1-9A82-57A9-2CE7D93DE7B8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TraditionalPathfinding", "TraditionalPathfinding.csproj", "{AF7933DC-CDE2-443A-E2D6-AEEE665368A7}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{3E2291CA-0492-0EE6-3D28-A04FA662BC37}"
 EndProject
 Global
@@ -27,6 +29,10 @@ Global
 		{72862B08-A2F1-9A82-57A9-2CE7D93DE7B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72862B08-A2F1-9A82-57A9-2CE7D93DE7B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72862B08-A2F1-9A82-57A9-2CE7D93DE7B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF7933DC-CDE2-443A-E2D6-AEEE665368A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF7933DC-CDE2-443A-E2D6-AEEE665368A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF7933DC-CDE2-443A-E2D6-AEEE665368A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF7933DC-CDE2-443A-E2D6-AEEE665368A7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3E2291CA-0492-0EE6-3D28-A04FA662BC37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3E2291CA-0492-0EE6-3D28-A04FA662BC37}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E2291CA-0492-0EE6-3D28-A04FA662BC37}.Release|Any CPU.ActiveCfg = Release|Any CPU
