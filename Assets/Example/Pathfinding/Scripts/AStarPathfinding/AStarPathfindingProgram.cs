@@ -12,7 +12,7 @@ using UnityEngine;
 
 namespace AStarPathfinding
 {
-    public class PathfindingProgram : MonoBehaviour
+    public class AStarPathfindingProgram : MonoBehaviour
     {
         public GameObject MapTiled;
         private int[,] numberMap;
@@ -82,8 +82,6 @@ namespace AStarPathfinding
             
 
             AStarTest();
-            //BFSTest();
-            //DFSTest();
 
         }
 
@@ -102,60 +100,6 @@ namespace AStarPathfinding
                     if (!passNodes[i].EqualOther(starNode) && !passNodes[i].EqualOther(endNode))
                     {
                         map[passNodes[i].Point.X, passNodes[i].Point.Y].GetComponent<SpriteRenderer>().color = Color.yellow;
-                    }
-                }
-                Debug.Log("寻路成功！");
-            }
-            else
-            {
-                Debug.Log("寻路失败！");
-            }
-            
-        }
-
-        public void BFSTest()
-        {
-            BFSSystem.InitMap(numberMap, 3);
-            Node startNode = new Node(1, 3,1);
-            Node endNode = new Node(8, 1, 2);
-            List<Node> passNodes = new List<Node>();
-            
-            bool result=BFSSystem.Search(startNode,endNode,ref passNodes);
-
-            if (result)
-            {
-                for(int i = 0; i < passNodes.Count; i++)
-                {
-                    if (!passNodes[i].EqualsOther(startNode) && !passNodes[i].EqualsOther(endNode))
-                    {
-                        map[passNodes[i].X, passNodes[i].Y].GetComponent<SpriteRenderer>().color = Color.yellow;
-                    }
-                }
-                Debug.Log("寻路成功！");
-            }
-            else
-            {
-                Debug.Log("寻路失败！");
-            }
-            
-        }
-
-        public void DFSTest()
-        {
-            DFSSystem.InitMap(numberMap, 3);
-            Node startNode = new Node(1, 3,1);
-            Node endNode = new Node(8, 1, 2);
-            List<Node> passNodes = new List<Node>();
-            
-            bool result = DFSSystem.Search(startNode, endNode, ref passNodes);
-            
-            if (result)
-            {
-                for(int i = 0; i < passNodes.Count; i++)
-                {
-                    if (!passNodes[i].EqualsOther(startNode) && !passNodes[i].EqualsOther(endNode))
-                    {
-                        map[passNodes[i].X, passNodes[i].Y].GetComponent<SpriteRenderer>().color = Color.yellow;
                     }
                 }
                 Debug.Log("寻路成功！");

@@ -63,8 +63,9 @@
      <Compile Include="Assets\Example\FiniteStatesMachine\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Example\FiniteStatesMachine\Scripts\States\FollowPlayerState.cs" />
      <Compile Include="Assets\Example\FiniteStatesMachine\Scripts\States\PatrolState.cs" />
+     <Compile Include="Assets\Example\Pathfinding\Scripts\AStarPathfinding\AStarPathfindingProgram.cs" />
      <Compile Include="Assets\Example\Pathfinding\Scripts\AStarPathfinding\MyAStarNode.cs" />
-     <Compile Include="Assets\Example\Pathfinding\Scripts\PathfindingProgram.cs" />
+     <Compile Include="Assets\Example\Pathfinding\Scripts\TraditionalPathfinding\TraditionalPathfindingProgram.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Volumes/Datas/Codes/Unity/AIInGames/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
