@@ -69,7 +69,7 @@ namespace FiniteStatesMachine
         /// 移除一个转换条件
         /// </summary>
         /// <param name="transition">转换状态</param>
-        public void RemoveAddTransition(string transition)
+        public void RemoveTransition(string transition)
         {
             if (transition == String.Empty||transition == "")
             {

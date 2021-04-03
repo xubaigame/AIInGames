@@ -36,8 +36,7 @@ namespace FiniteStatesMachine
 
 		public void FixedUpdate()
 		{
-			fsm.CurrentState.Reason();
-			fsm.CurrentState.Action();
+			fsm.UpdateMethod();
 		}
 	}
 }

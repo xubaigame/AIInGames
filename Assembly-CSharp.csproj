@@ -58,11 +58,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Example\FiniteStatesMachine\Scripts\Constants.cs" />
-     <Compile Include="Assets\Example\FiniteStatesMachine\Scripts\NPCController.cs" />
-     <Compile Include="Assets\Example\FiniteStatesMachine\Scripts\PlayerController.cs" />
-     <Compile Include="Assets\Example\FiniteStatesMachine\Scripts\States\FollowPlayerState.cs" />
-     <Compile Include="Assets\Example\FiniteStatesMachine\Scripts\States\PatrolState.cs" />
+     <Compile Include="Assets\Example\FiniteStateMachine\Scripts\Constants.cs" />
+     <Compile Include="Assets\Example\FiniteStateMachine\Scripts\NPCController.cs" />
+     <Compile Include="Assets\Example\FiniteStateMachine\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Example\FiniteStateMachine\Scripts\States\FollowPlayerState.cs" />
+     <Compile Include="Assets\Example\FiniteStateMachine\Scripts\States\PatrolState.cs" />
+     <Compile Include="Assets\Example\HierarchicalFiniteStateMachine\Scripts\States\BuyState.cs" />
+     <Compile Include="Assets\Example\HierarchicalFiniteStateMachine\Scripts\States\CookState.cs" />
+     <Compile Include="Assets\Example\HierarchicalFiniteStateMachine\Scripts\States\PayState.cs" />
+     <Compile Include="Assets\Example\HierarchicalFiniteStateMachine\Scripts\States\ReadBookState.cs" />
+     <Compile Include="Assets\Example\HierarchicalFiniteStateMachine\Scripts\States\SleepState.cs" />
+     <Compile Include="Assets\Example\HierarchicalFiniteStateMachine\Scripts\SubSystem\HomeSystem.cs" />
+     <Compile Include="Assets\Example\HierarchicalFiniteStateMachine\Scripts\SubSystem\MarketSystem.cs" />
+     <Compile Include="Assets\Example\HierarchicalFiniteStateMachine\Scripts\UIController.cs" />
      <Compile Include="Assets\Example\Pathfinding\Scripts\AStarPathfinding\AStarPathfindingProgram.cs" />
      <Compile Include="Assets\Example\Pathfinding\Scripts\AStarPathfinding\MyAStarNode.cs" />
      <Compile Include="Assets\Example\Pathfinding\Scripts\TraditionalPathfinding\TraditionalPathfindingProgram.cs" />
@@ -636,13 +644,17 @@
       <Project>{DB800171-0235-C993-9EB3-36CAEFBD6DF5}</Project>
       <Name>FSMAssembly</Name>
     </ProjectReference>
+    <ProjectReference Include="TraditionalPathfinding.csproj">
+      <Project>{AF7933DC-CDE2-443A-E2D6-AEEE665368A7}</Project>
+      <Name>TraditionalPathfinding</Name>
+    </ProjectReference>
     <ProjectReference Include="AStarAssembly.csproj">
       <Project>{CB5D3E2F-B100-85A5-567F-6180FA20C1A6}</Project>
       <Name>AStarAssembly</Name>
     </ProjectReference>
-    <ProjectReference Include="TraditionalPathfinding.csproj">
-      <Project>{AF7933DC-CDE2-443A-E2D6-AEEE665368A7}</Project>
-      <Name>TraditionalPathfinding</Name>
+    <ProjectReference Include="HFSMAssembly.csproj">
+      <Project>{7D07BCFD-5222-A95B-DD8F-4C9384E811E4}</Project>
+      <Name>HFSMAssembly</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -141,5 +141,11 @@ namespace FiniteStatesMachine
                 _currentState = temp;
             }
         }
+
+        public void UpdateMethod()
+        {
+            CurrentState.Reason();
+            CurrentState.Action();
+        }
     }
 }

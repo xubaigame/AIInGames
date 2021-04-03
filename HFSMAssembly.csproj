@@ -12,10 +12,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{DB800171-0235-C993-9EB3-36CAEFBD6DF5}</ProjectGuid>
+    <ProjectGuid>{7D07BCFD-5222-A95B-DD8F-4C9384E811E4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>FSMAssembly</AssemblyName>
+    <AssemblyName>HFSMAssembly</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -58,9 +58,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\FiniteStateMachine\FSMBaseState.cs" />
-     <Compile Include="Assets\Scripts\FiniteStateMachine\FSMSystem.cs" />
-     <None Include="Assets\Scripts\FiniteStateMachine\FSMAssembly.asmdef" />
+     <Compile Include="Assets\Scripts\HierarchicalFiniteStatesMachine\HFSMBaseState.cs" />
+     <Compile Include="Assets\Scripts\HierarchicalFiniteStatesMachine\HFSMBaseSystem.cs" />
+     <Compile Include="Assets\Scripts\HierarchicalFiniteStatesMachine\HFSMManagerSystem.cs" />
+     <None Include="Assets\Scripts\HierarchicalFiniteStatesMachine\HFSMAssembly.asmdef" />
  <Reference Include="UnityEditor.UI">
  <HintPath>/Volumes/Datas/Codes/Unity/AIInGames/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
