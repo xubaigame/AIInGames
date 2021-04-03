@@ -58,10 +58,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\HierarchicalFiniteStatesMachine\HFSMBaseState.cs" />
-     <Compile Include="Assets\Scripts\HierarchicalFiniteStatesMachine\HFSMBaseSystem.cs" />
-     <Compile Include="Assets\Scripts\HierarchicalFiniteStatesMachine\HFSMManagerSystem.cs" />
-     <None Include="Assets\Scripts\HierarchicalFiniteStatesMachine\HFSMAssembly.asmdef" />
+     <Compile Include="Assets\Scripts\HierarchicalFiniteStateMachine\HFSMBaseState.cs" />
+     <Compile Include="Assets\Scripts\HierarchicalFiniteStateMachine\HFSMBaseSystem.cs" />
+     <Compile Include="Assets\Scripts\HierarchicalFiniteStateMachine\HFSMManagerSystem.cs" />
+     <None Include="Assets\Scripts\HierarchicalFiniteStateMachine\HFSMAssembly.asmdef" />
  <Reference Include="UnityEditor.UI">
  <HintPath>/Volumes/Datas/Codes/Unity/AIInGames/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
