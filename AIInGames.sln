@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FSMAssembly", "FSMAssembly.csproj", "{DB800171-0235-C993-9EB3-36CAEFBD6DF5}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{72862B08-A2F1-9A82-57A9-2CE7D93DE7B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BehaviorTree", "BehaviorTree.csproj", "{03BA54A1-341A-4312-CF0E-DF512B69E7A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FSMAssembly", "FSMAssembly.csproj", "{DB800171-0235-C993-9EB3-36CAEFBD6DF5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TraditionalPathfinding", "TraditionalPathfinding.csproj", "{AF7933DC-CDE2-443A-E2D6-AEEE665368A7}"
 EndProject
@@ -19,14 +21,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DB800171-0235-C993-9EB3-36CAEFBD6DF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DB800171-0235-C993-9EB3-36CAEFBD6DF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DB800171-0235-C993-9EB3-36CAEFBD6DF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DB800171-0235-C993-9EB3-36CAEFBD6DF5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{72862B08-A2F1-9A82-57A9-2CE7D93DE7B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{72862B08-A2F1-9A82-57A9-2CE7D93DE7B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72862B08-A2F1-9A82-57A9-2CE7D93DE7B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72862B08-A2F1-9A82-57A9-2CE7D93DE7B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03BA54A1-341A-4312-CF0E-DF512B69E7A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03BA54A1-341A-4312-CF0E-DF512B69E7A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03BA54A1-341A-4312-CF0E-DF512B69E7A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03BA54A1-341A-4312-CF0E-DF512B69E7A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB800171-0235-C993-9EB3-36CAEFBD6DF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB800171-0235-C993-9EB3-36CAEFBD6DF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB800171-0235-C993-9EB3-36CAEFBD6DF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB800171-0235-C993-9EB3-36CAEFBD6DF5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AF7933DC-CDE2-443A-E2D6-AEEE665368A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AF7933DC-CDE2-443A-E2D6-AEEE665368A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF7933DC-CDE2-443A-E2D6-AEEE665368A7}.Release|Any CPU.ActiveCfg = Release|Any CPU

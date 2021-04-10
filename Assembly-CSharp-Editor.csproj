@@ -672,6 +672,10 @@
       <Project>{7D07BCFD-5222-A95B-DD8F-4C9384E811E4}</Project>
       <Name>HFSMAssembly</Name>
     </ProjectReference>
+    <ProjectReference Include="BehaviorTree.csproj">
+      <Project>{03BA54A1-341A-4312-CF0E-DF512B69E7A6}</Project>
+      <Name>BehaviorTree</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

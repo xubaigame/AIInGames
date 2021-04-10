@@ -58,6 +58,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Example\BehaviorTree\Scripts\ActionNode\Idel.cs" />
+     <Compile Include="Assets\Example\BehaviorTree\Scripts\ActionNode\Move.cs" />
+     <Compile Include="Assets\Example\BehaviorTree\Scripts\BehaviorTreeManager.cs" />
+     <Compile Include="Assets\Example\BehaviorTree\Scripts\Decorator\UntilSucceed.cs" />
      <Compile Include="Assets\Example\FiniteStateMachine\Scripts\Constants.cs" />
      <Compile Include="Assets\Example\FiniteStateMachine\Scripts\NPCController.cs" />
      <Compile Include="Assets\Example\FiniteStateMachine\Scripts\PlayerController.cs" />
@@ -655,6 +659,10 @@
     <ProjectReference Include="HFSMAssembly.csproj">
       <Project>{7D07BCFD-5222-A95B-DD8F-4C9384E811E4}</Project>
       <Name>HFSMAssembly</Name>
+    </ProjectReference>
+    <ProjectReference Include="BehaviorTree.csproj">
+      <Project>{03BA54A1-341A-4312-CF0E-DF512B69E7A6}</Project>
+      <Name>BehaviorTree</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
