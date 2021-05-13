@@ -623,6 +623,17 @@
      <Compile Include="Assets\Example\FiniteStateMachine\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Example\FiniteStateMachine\Scripts\States\FollowPlayerState.cs" />
      <Compile Include="Assets\Example\FiniteStateMachine\Scripts\States\PatrolState.cs" />
+     <Compile Include="Assets\Example\GeneticAlgorithmAndNeuralNetwork\Scripts\AI\Genetic\GeneticOptimisation.cs" />
+     <Compile Include="Assets\Example\GeneticAlgorithmAndNeuralNetwork\Scripts\AI\Genetic\GeneticOptimizeableNerualNetwork.cs" />
+     <Compile Include="Assets\Example\GeneticAlgorithmAndNeuralNetwork\Scripts\AI\ISMath.cs" />
+     <Compile Include="Assets\Example\GeneticAlgorithmAndNeuralNetwork\Scripts\AI\NeuralNetwork\ActivationFunction.cs" />
+     <Compile Include="Assets\Example\GeneticAlgorithmAndNeuralNetwork\Scripts\AI\NeuralNetwork\NeuralNetwork.cs" />
+     <Compile Include="Assets\Example\GeneticAlgorithmAndNeuralNetwork\Scripts\GamePlay\ShootObject.cs" />
+     <Compile Include="Assets\Example\GeneticAlgorithmAndNeuralNetwork\Scripts\GamePlay\Tank.cs" />
+     <Compile Include="Assets\Example\GeneticAlgorithmAndNeuralNetwork\Scripts\GamePlay\Unit.cs" />
+     <Compile Include="Assets\Example\GeneticAlgorithmAndNeuralNetwork\Scripts\TankDriver.cs" />
+     <Compile Include="Assets\Example\GeneticAlgorithmAndNeuralNetwork\Scripts\UIController.cs" />
+     <Compile Include="Assets\Example\GeneticAlgorithmAndNeuralNetwork\Scripts\WorldController.cs" />
      <Compile Include="Assets\Example\HierarchicalFiniteStateMachine\Scripts\States\BuyState.cs" />
      <Compile Include="Assets\Example\HierarchicalFiniteStateMachine\Scripts\States\CookState.cs" />
      <Compile Include="Assets\Example\HierarchicalFiniteStateMachine\Scripts\States\PayState.cs" />
