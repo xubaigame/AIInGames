@@ -9,7 +9,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BehaviorTree
+namespace BaseBehaviorTree
 {
     public class ParallelSelectNode : CompositeNode
     {

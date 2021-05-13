@@ -6,7 +6,7 @@
 //     功能：条件节点基类
 // *****************************************************
 
-namespace BehaviorTree
+namespace BaseBehaviorTree
 {
     public class ConditionNode : BaseNode
     {

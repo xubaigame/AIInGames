@@ -59,38 +59,43 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Editor\ScriptsInfoRecoder.cs" />
+     <Compile Include="Assets\Example\BehaviorDesigner\Addons\Behavior Designer\Editor\BehaviorTreeInspector.cs" />
+     <Compile Include="Assets\Example\BehaviorDesigner\Addons\Behavior Designer\Editor\ExternalBehaviorTreeInspector.cs" />
+     <Compile Include="Assets\Example\BehaviorDesigner\Addons\Behavior Designer\Editor\Object Drawers\FloatSliderDrawer.cs" />
+     <Compile Include="Assets\Example\BehaviorDesigner\Addons\Behavior Designer\Editor\Object Drawers\IntSliderDrawer.cs" />
+     <None Include="Assets\Example\BehaviorDesigner\Addons\Behavior Designer\Editor\GridShader.shader" />
  <Reference Include="UnityEditor.TestRunner">
- <HintPath>/Volumes/Datas/Codes/Unity/AIInGames/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+ <HintPath>/Users/mumu/Codes/Unity/AIInGames/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.TestRunner">
- <HintPath>/Volumes/Datas/Codes/Unity/AIInGames/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+ <HintPath>/Users/mumu/Codes/Unity/AIInGames/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>/Volumes/Datas/Codes/Unity/AIInGames/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>/Users/mumu/Codes/Unity/AIInGames/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>/Volumes/Datas/Codes/Unity/AIInGames/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>/Users/mumu/Codes/Unity/AIInGames/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>/Volumes/Datas/Codes/Unity/AIInGames/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>/Users/mumu/Codes/Unity/AIInGames/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>/Volumes/Datas/Codes/Unity/AIInGames/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>/Users/mumu/Codes/Unity/AIInGames/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>/Volumes/Datas/Codes/Unity/AIInGames/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>/Users/mumu/Codes/Unity/AIInGames/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>/Volumes/Datas/Codes/Unity/AIInGames/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>/Users/mumu/Codes/Unity/AIInGames/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>/Volumes/Datas/Codes/Unity/AIInGames/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>/Users/mumu/Codes/Unity/AIInGames/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>/Volumes/Datas/Codes/Unity/AIInGames/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>/Users/mumu/Codes/Unity/AIInGames/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>/Volumes/Datas/Codes/Unity/AIInGames/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>/Users/mumu/Codes/Unity/AIInGames/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>/Applications/Unity/Hub/Editor/2019.4.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -287,8 +292,14 @@
  <Reference Include="UnityEditor.iOS.Extensions">
  <HintPath>/Applications/Unity/Hub/Editor/2019.4.11f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
  </Reference>
+ <Reference Include="BehaviorDesigner.Editor">
+ <HintPath>/Users/mumu/Codes/Unity/AIInGames/Assets/Example/BehaviorDesigner/Addons/Behavior Designer/Editor/BehaviorDesigner.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="BehaviorDesigner.Runtime">
+ <HintPath>/Users/mumu/Codes/Unity/AIInGames/Assets/Example/BehaviorDesigner/Addons/Behavior Designer/Runtime/BehaviorDesigner.Runtime.dll</HintPath>
+ </Reference>
  <Reference Include="nunit.framework">
- <HintPath>/Volumes/Datas/Codes/Unity/AIInGames/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+ <HintPath>/Users/mumu/Codes/Unity/AIInGames/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>/Applications/Unity/Hub/Editor/2019.4.11f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -672,9 +683,9 @@
       <Project>{7D07BCFD-5222-A95B-DD8F-4C9384E811E4}</Project>
       <Name>HFSMAssembly</Name>
     </ProjectReference>
-    <ProjectReference Include="BehaviorTree.csproj">
-      <Project>{03BA54A1-341A-4312-CF0E-DF512B69E7A6}</Project>
-      <Name>BehaviorTree</Name>
+    <ProjectReference Include="BaseBehaviorTree.csproj">
+      <Project>{B42156DF-A8FE-4AC9-1E85-62A8825FAC7C}</Project>
+      <Name>BaseBehaviorTree</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

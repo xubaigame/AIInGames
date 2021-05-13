@@ -6,7 +6,7 @@
 //     功能：顺序节点
 // *****************************************************
 
-namespace BehaviorTree
+namespace BaseBehaviorTree
 {
     public class SequenceNode : CompositeNode
     {

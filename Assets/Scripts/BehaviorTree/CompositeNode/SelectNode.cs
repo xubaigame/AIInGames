@@ -6,7 +6,7 @@
 //     功能：选择节点
 // *****************************************************
 
-namespace BehaviorTree
+namespace BaseBehaviorTree
 {
     public class SelectNode : CompositeNode
     {

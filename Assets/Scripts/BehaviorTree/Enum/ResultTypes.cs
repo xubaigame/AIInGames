@@ -8,7 +8,7 @@
 
 using UnityEngine;
 
-namespace BehaviorTree
+namespace BaseBehaviorTree
 {
    public enum ResultTypes
    {

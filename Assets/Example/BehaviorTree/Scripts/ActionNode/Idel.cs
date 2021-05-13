@@ -8,7 +8,7 @@
 
 using System.Collections;
 using System.Collections.Generic;
-using BehaviorTree;
+using BaseBehaviorTree;
 using UnityEngine;
 
 public class Idel : ActionNode

@@ -6,7 +6,7 @@
 //     功能：行为节点基类
 // *****************************************************
 
-namespace BehaviorTree
+namespace BaseBehaviorTree
 {
     public class ActionNode : BaseNode
     {

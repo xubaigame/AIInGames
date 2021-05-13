@@ -62,10 +62,10 @@
      <Compile Include="Assets\Scripts\FiniteStateMachine\FSMSystem.cs" />
      <None Include="Assets\Scripts\FiniteStateMachine\FSMAssembly.asmdef" />
  <Reference Include="UnityEditor.UI">
- <HintPath>/Volumes/Datas/Codes/Unity/AIInGames/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>/Users/mumu/Codes/Unity/AIInGames/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>/Volumes/Datas/Codes/Unity/AIInGames/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>/Users/mumu/Codes/Unity/AIInGames/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>/Applications/Unity/Hub/Editor/2019.4.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -261,6 +261,12 @@
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions">
  <HintPath>/Applications/Unity/Hub/Editor/2019.4.11f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="BehaviorDesigner.Editor">
+ <HintPath>/Users/mumu/Codes/Unity/AIInGames/Assets/Example/BehaviorDesigner/Addons/Behavior Designer/Editor/BehaviorDesigner.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="BehaviorDesigner.Runtime">
+ <HintPath>/Users/mumu/Codes/Unity/AIInGames/Assets/Example/BehaviorDesigner/Addons/Behavior Designer/Runtime/BehaviorDesigner.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>/Applications/Unity/Hub/Editor/2019.4.11f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

@@ -6,7 +6,7 @@
 //     功能：装饰节点基类
 // *****************************************************
 
-namespace BehaviorTree
+namespace BaseBehaviorTree
 {
     public class DecoratorNode : BaseNode
     {

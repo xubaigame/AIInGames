@@ -8,7 +8,7 @@
 
 using System.Collections.Generic;
 
-namespace BehaviorTree
+namespace BaseBehaviorTree
 {
     public class ParallelSequenceNode : CompositeNode
     {
